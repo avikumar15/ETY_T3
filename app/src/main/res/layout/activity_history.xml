@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryActivity"
+    android:background="#fa4d4d"
+    android:paddingTop="20dp"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/back"
+        android:onClick="GOBACK"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/dustbin"
+        android:layout_gravity="right"
+        android:background="#ff8f8f"
+        android:padding="3dp"
+        android:onClick="DELETEDATA"
+        />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#000000"
+    android:textSize="30sp"
+    android:text="HISTORY"
+    android:layout_gravity="center_horizontal"
+    android:padding="10dp"
+    android:background="#7490e3"
+    android:layout_marginTop="-50dp"
+    android:id="@+id/TITLE"
+    android:layout_marginBottom="20dp"
+    />
+
+    <ListView
+        android:id="@+id/LIST"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/border"
+        android:scrollbars="vertical"
+        >
+
+    </ListView>
+
+</LinearLayout>
